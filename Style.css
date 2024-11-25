@@ -11,19 +11,18 @@ a {
 }
 
 body {
-  background-color: rgb(248, 229, 201);
+  background-color: rgb(246, 218, 175);
 }
 
 .header-nav {
+  background-color: rgb(255 235 204);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 15px 30px;
-  color: #ffffff; /* Light text for contrast */
   border-bottom: 2px solid #444444;
 }
 
@@ -34,38 +33,32 @@ body {
 }
 
 .cta-button {
-  border-color: #000; /* Black border */
   color: #000; /* Black text */
 }
 
 .cta-button,
 .secondary-button {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
   padding: 8px 12px; /* Adjust for desired button size */
-  border-radius: 10px; /* Rounded corners */
-  border: 2px solid; /* Border thickness */
   background-color: transparent; /* No background fill */
-  cursor: pointer;
   transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
   text-transform: uppercase; /* Make text uppercase */
+  border-radius: 50px;
 }
 
 .cta-button:hover {
-  background-color: #000; /* Black background on hover */
-  color: #fff; /* White text on hover */
+  background-color: #f2cf9c; /* Black background on hover */
+  color: #000000; /* text on hover */
 }
 
 /* Secondary button styles */
 .secondary-button {
-  border-color: #3d3d3d; /* Light grey border */
   color: #323232; /* Light grey text */
 }
 
 .secondary-button:hover {
-  background-color: #7a7a7a; /* Light grey background on hover */
-  color: #fff; /* White text on hover */
+  background-color: #f2cf9c; /* Light grey background on hover */
+  color: #000000; /* White text on hover */
 }
 
 .header {
@@ -115,7 +108,6 @@ body {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   padding: 10px 0;
-  margin: 20px 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: #111111;
@@ -138,7 +130,7 @@ body {
 
 .name span {
   display: inline-block;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   animation: wave 1s ease-in-out infinite;
@@ -154,7 +146,7 @@ body {
 h2 {
   color: #111111;
   font-size: 84px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 20px;
 }
@@ -176,10 +168,11 @@ p {
 }
 
 .knapp {
-  border-radius: 0%;
   border-color: transparent;
   background-color: transparent;
-  padding: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   font-size: x-large;
 }
 
@@ -203,18 +196,18 @@ p {
 .project {
   display: flex;
   flex-direction: row;
-  background-color: rgb(222, 201, 173);
+  background-color: #f2cf9c;
   border-radius: 8px;
   overflow: hidden;
   width: auto;
-  height: 500px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: translateY(-10px); /* upp eller ner hover*/
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: rgb(201, 183, 160);
+  background-color: #f2cf9c;
 }
 
 .imagecontent {
@@ -269,7 +262,7 @@ p {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Adjust height to control wave amplitude */
+    transform: translateY(-4px); /* Adjust height to control wave amplitude */
   }
 }
 
