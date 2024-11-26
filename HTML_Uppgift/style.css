@@ -33,32 +33,31 @@ body {
 }
 
 .cta-button {
-  color: #000; /* Black text */
+  color: #000;
 }
 
 .cta-button,
 .secondary-button {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 8px 12px; /* Adjust for desired button size */
-  background-color: transparent; /* No background fill */
-  transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
-  text-transform: uppercase; /* Make text uppercase */
+  padding: 8px 12px;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  text-transform: uppercase;
   border-radius: 50px;
 }
 
 .cta-button:hover {
-  background-color: #f2cf9c; /* Black background on hover */
-  color: #000000; /* text on hover */
+  background-color: #f2cf9c;
+  color: #000000;
 }
 
-/* Secondary button styles */
 .secondary-button {
-  color: #323232; /* Light grey text */
+  color: #323232;
 }
 
 .secondary-button:hover {
-  background-color: #f2cf9c; /* Light grey background on hover */
-  color: #000000; /* White text on hover */
+  background-color: #f2cf9c;
+  color: #000000;
 }
 
 .header {
@@ -71,20 +70,20 @@ body {
 
 .header-content {
   display: flex;
-  align-items: center; /* Align items vertically */
-  gap: 20px; /* Space between text and image */
+  align-items: center;
+  gap: 20px;
 }
 
 .text-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align text to the left */
+  align-items: flex-start;
 }
 
 .bild img {
-  width: 300px; /* Adjust the image size */
+  width: 300px;
   height: auto;
-  border-radius: 10px; /* Optional rounded corners */
+  border-radius: 10px;
 }
 
 .william {
@@ -223,7 +222,7 @@ p {
   height: 100%;
   object-fit: cover;
   max-height: 700px;
-  transition: all 0.3s ease; /* Smooth transition for image properties */
+  transition: all 0.3s ease;
 }
 
 .image-overlay {
@@ -233,9 +232,9 @@ p {
   height: 100%;
 }
 
-/* Hover effect for image only */
+/* Bara bild hover */
 .image-overlay:hover img {
-  filter: blur(5px) brightness(0.5); /* Darken and blur the image */
+  filter: blur(5px) brightness(0.5);
 }
 
 .overlay-text {
@@ -247,11 +246,10 @@ p {
   font-size: 1.2rem;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-  pointer-events: none; /* Prevent text from blocking hover events */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Text ej blockar hover */
 }
 
-/* Make overlay text visible on hover */
 .image-overlay:hover .overlay-text {
   opacity: 1;
 }
@@ -262,11 +260,11 @@ p {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-4px); /* Adjust height to control wave amplitude */
+    transform: translateY(-4px);
   }
 }
 
-/* Apply a delay to each letter to create a wave effect */
+/* Vågeffekt */
 .name span:nth-child(1) {
   animation-delay: 0s;
 }
@@ -364,4 +362,57 @@ p {
     font-size: 18px;
     padding-bottom: 60px;
   }
+}
+
+/* CSS för PULS */
+.project-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-header {
+  background: url("https://visualarena.lindholmen.se/sites/default/files/styles/preview/public/2021-12/ux-arena-preview-.png?itok=hrrajzEl")
+    no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.project-header h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 2.5rem;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.project-images {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-images img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
